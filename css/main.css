@@ -1,0 +1,69 @@
+/* CSS Document */
+body {
+    margin: 0;
+    display: grid;
+    background: #656868;
+    font-size: 2em;
+    text-align: left;
+ }
+ 
+ .container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 100px;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.header-content {
+  
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    background:url(/img/header.jpg);
+    background-size: cover;
+}
+
+.footer {
+    background: url(/img/footer.jpg);
+    grid-column: 1 / span 3;
+    color: #fcf8e3;
+    text-align: center;
+}
+
+.Body {
+    background-color: #bef1b4;
+    color: #333;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 30px;
+}
+.BodyRight{
+    
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 3;
+    grid-column-end: 6;
+
+    background-color: #e1d369;
+    color: #333;
+}
