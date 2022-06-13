@@ -15,27 +15,21 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Contact</title>
+	<title>Mi California - Mexican Bar and Grill | Contact</title>
 
 </head>
 
 <body>
 	<div class="container">
 		<nav>
-			<div class="logo">
-				<a href="Home.html">
-					<img class="logo" src="/img/Mi California Promo Logo.png alt=" nav-logo"></img>
-			</div>
 			<ul class=nav-links>
-				<li><a href="specials.html">Specials</a></li>
-				<li><a href="about us.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="reserve.html">Reserve</a></li>
+				<li> <a href="Home.php"><img class="logo" src="image/Mi California Promo Logo.png" alt="logo-img"></img><a href="Home.php"></li>
+				<li><a href="about us.php">About</a></li>
+				<li><a href="contact.php">Contact</a></li>
+				<li><a href="menu.php">Menu</a></li>
+				<li><a href="3-reservation.php">Reserve</a></li>
+				<li><button class="reservation-button" onclick="location.href='login.php'">Login</button></li>
 			</ul>
-
-			<button class="reservation-button" onclick="location.href='Reservations.html'">Login</button>
-
 			<div class="burger">
 				<div class="line1"></div>
 				<div class="line2"></div>
@@ -45,7 +39,7 @@
 		<script src="burger.js"></script>
 
 
-		<form class="contact-form" action="contact.html" method="post">
+		<form class="contact-form" action="contact.php" method="post">
 			<h1 class="contact-header">Contact Us</h1>
 			<label for="Name" class="contact-label">Name</label>
 			<input type="text" class="contact-form" id="Name" Name="Name" placeholder="Name">
@@ -55,22 +49,11 @@
 			<input type="" subject="subject" class="contact-form" id="subject" placeholder="Subject">
 			<label for="Message" class="contact-label">Message</label>
 			<textarea class="contact-form" id="Message" Name="Message" placeholder="Message"></textarea>
-			<button type="submit" class="contact-button">Send Mail</button>
+			<a href="contact-submit.php"><button class="contact-button" onclick="location.href='contact-submit.php'">Send Mail</button></a>
 		</form>
 
 
-
-
-
-
-
-
-
-
-
-
-
-		<div class="footer">
+		<div class="contact-footer">
 			<br>
 			<p>&copy; Copyright 2022 Mi California Restaurant Inc </p>
 		</div>

@@ -1,8 +1,21 @@
+@font-face{
+    src: url(../micaliforniaWeb/fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: welcome;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/****************************************************************************************************/
+
+body{
+    background-color: #FCFAED;
+}
+
+
 
 /* ALL PAGES: Navigation */
 nav{
@@ -17,7 +30,18 @@ font-family: 'Poppins', sans-serif;
 .logo{
     height: 150px;
     width: 150px;
+    position: relative;
+    top: 5px;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
 }
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
 
 .nav-links{
     display: flex;
@@ -25,7 +49,7 @@ font-family: 'Poppins', sans-serif;
     align-items: center;
     width: 80%;
     letter-spacing: 1.5px;
-    font-size: 18px
+    font-size: 30px
 }
 
 .nav-links a{
@@ -50,8 +74,19 @@ font-family: 'Poppins', sans-serif;
     margin: 50px 10px;
     border: none;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.reservation-button:hover{
+    transform: scale(1.05);
+}
+
+.nav-links li:hover{
+    transform: scale(1.05);
 }
 
 .burger{
@@ -76,7 +111,7 @@ font-family: 'Poppins', sans-serif;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .burger{
         display: block;
         cursor: pointer;
@@ -119,9 +154,7 @@ font-family: 'Poppins', sans-serif;
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px,-6px);
 }
-
-
-
+/****************************************************************************************************/
 
 
 /* All Pages: Footer */
@@ -146,19 +179,16 @@ font-family: 'Poppins', sans-serif;
         transform: translateX(0px);
     }
 }
+/****************************************************************************************************/
 
 
 
 
 
-
-
-
-/* Contact us: Header */
+/* Contact us */
 .contact-form{
-    width: 600px;
     width: 100%;
-    padding: 50px;
+    padding: 25px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -175,12 +205,29 @@ font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-family: 'welcome';
     font-weight: bold;
-    letter-spacing: 1.5px;
+    color: orangered;
+    text-shadow: 2px 2px #160000;
 }
 
+
+
+.contact-footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52626;
+    color: white;
+    min-height: 4vh;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
 
 .contact-button{
     background-color: #E52626;
@@ -193,6 +240,10 @@ font-family: 'Poppins', sans-serif;
     cursor: pointer;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.contact-button:hover{
+    transform: scale(1.05);
 }
 
 .contact-label{
@@ -228,4 +279,553 @@ border: 1px solid #ddd;
 ::-ms-input-placeholder{
     color: rgb(101, 5, 5);
 }
+/* Contact us submit */
 
+
+
+.contact-submit-h1{
+    margin: 150px 250px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+.contact-submit-footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52626;
+    color: white;
+    min-height: 4vh;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-submit-button {
+    background-color: #E52626;
+    color: white;
+    height: 60px;
+    width: 140px;
+    padding: 14px 20px;
+    margin: 100px 1250px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-submit-button:hover{
+    transform: scale(1.35);
+}
+
+
+/****************************************************************************************************/
+
+
+
+
+
+/* About us */
+.about-container {
+  display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 150px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.about-Header{
+    grid-column-start: 1 / 1;
+    grid-row-start: 1 / 2;
+    font-size: 34px;
+    font-family: 'welcome';
+    font-weight: bold;
+    color: orangered;
+    text-shadow: 2px 2px #160000;
+    letter-spacing: 4.5px;
+    text-align: center;
+}
+
+.about-Content{
+    grid-column-start: 2 / 2;
+    grid-row-start: 1 / 2;
+
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.about-Img{
+    width: 100%; 
+    height: 100%;   
+}
+
+#map {
+    grid-column-start: 1 / 2;
+    grid-row-start: 2 / 2;
+   
+}
+
+
+/****************************************************************************************************/
+
+/* Specials */
+
+@media screen and (min-width: 768px) {
+    .menu-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    .menu-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .menu-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.wrapper-gallery{
+    margin: 0  20vw;
+}
+
+.menu-grid{
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    margin: 0 auto;
+
+}
+
+.menu-grid:hover{
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5) ;
+}
+    
+
+.col{
+    margin-bottom: 16px;
+    padding: 16px;
+    align-self: start;
+}
+
+
+
+.menu-footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52626;
+    color: white;
+    min-height: 4vh;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 'welcome';
+    font-weight: bold;
+    color: orangered;
+    text-shadow: 2px 2px #160000;
+}
+
+
+/****************************************************************************************************/
+
+/* Menu */
+
+/****************************************************************************************************/
+
+
+/* Home */
+
+.home-grid{
+    display: grid;
+    grid-gap: 20px;
+    padding: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+    "home-main home-main"
+    "home-social home-social"
+    "home-slideshow home-slideshow"
+    "home-socialshare home-socialshare"
+    "home-us home-about";
+}
+    
+.home-main{
+grid-area: home-main;
+max-height: 600px;
+min-width: 1fr;
+min-height: 500px;
+font-display: block;
+background-image: url("./img/img2.jpg");
+background-size: cover;
+background-position: center;
+text-align: center;
+text-decoration: none;
+font-size: 35px;
+color: #cbf72b;
+font-family: welcome;
+text-shadow: 2px 2px #160000;
+}
+
+
+.home-social{
+    grid-area: home-social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    font-size: 30px
+}
+
+
+
+.carousel-container{
+    padding: 0px;
+    margin: 0px;
+box-sizing: border-box;
+margin: auto;
+width: 40%;
+border: 3px solid orange;
+overflow: hidden;
+position: relative;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    opacity: 75%;
+}
+
+#prevBtn:hover{
+    color: orange;
+}
+
+#nextBtn:hover {
+    color: orange;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 75%;
+}
+
+/* Home */
+.home-socialshare{
+    grid-area: home-socialshare;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.homebutton{
+    margin: 1rem;
+}
+
+.insta-home-button:hover{
+    transform: scale(1.1);
+}
+
+.face-home-button:hover{
+    transform: scale(1.1);
+}
+
+.twitter-home-button:hover{
+    transform: scale(1.1);
+}
+
+.twitter:hover{
+    transform: scale(1.1);
+}
+
+.facebook:hover{
+    transform: scale(1.1);
+}
+
+.instagram:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.home-reopening{
+    grid-area: home-reopening;
+}
+
+.home-us{
+    grid-area: home-us;
+}
+
+.home-about{
+    grid-area: home-about;
+}
+
+
+.h3-home{
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 45px;
+    color: #dc0000;
+    font-family: welcome;
+    text-shadow: 2px 2px #160000;
+}
+
+.p-home{
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    max-width: 60%;
+    font-size: 25px;
+    color: #000000;
+    font-family: popins;
+    margin: 0 1000px;
+}
+
+.share-home{
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 45px;
+    color: #0a0000;
+    font-family: welcome;
+    text-shadow: 2px 2px #ffffff;
+}
+
+
+.home-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52626;
+    color: white;
+    min-height: 4vh;
+    max-width: 100%;
+}
+
+/****************************************************************************************************/
+
+
+/* Reserve */
+
+
+#resForm {
+    max-width: 400px;
+    padding: 15px;
+    background: #f2f2f2;
+    border: 1px solid #aaa;
+  }
+  #resForm label, #resForm input, #resForm select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  #resForm input[type="submit"] {
+    background: #5c76d4;
+    color: #fff;
+    border: 0;
+    padding: 15px 0;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  div.ok, div.err { 
+    padding: 5px; 
+    font-weight: bold;
+  }
+  div.ok { 
+    background: #9cffbb; 
+    border: 1px solid #1ca526;
+  }
+  div.err { 
+    background: #ffe0e0; 
+    border: 1px solid #bb1919;
+  }
+
+.reserve-footer{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52626;
+    color: white;
+    min-height: 4vh;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reserve-h1{
+    margin: 0px 1000px;
+    font-size: 50px;
+    font-family: 'welcome';
+    font-weight: bold;
+    color: orangered;
+    text-shadow: 2px 2px #160000;
+}
+
+#resForm{
+    margin: 50px auto;
+}
+
+/****************************************************************************************************/
+
+
+/* Login */
+.general-login{
+    margin: 0px 900px;
+    justify-content: center;
+    align-items: center;
+}
+.general-login form{
+    justify-content: center;
+    max-width: 600px;
+    padding: 15px;
+    background: #f2f2f2;
+    border: 1px solid #aaa;
+  }
+  .general-login form label, .general-login form input, .general-login form select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  .general-login form input[type="submit"] {
+    background: #5c76d4;
+    color: #fff;
+    border: 0;
+    padding: 15px 0;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  div.ok, div.err { 
+    padding: 5px; 
+    font-weight: bold;
+  }
+  div.ok { 
+    background: #9cffbb; 
+    border: 1px solid #1ca526;
+  }
+  div.err { 
+    background: #ffe0e0; 
+    border: 1px solid #bb1919;
+  }
+
+
+  .out-login{
+    margin: 0px 900px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .in-login{
+    margin: 0px 900px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+  }
+.login-footer{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52626;
+    color: white;
+    min-height: 4vh;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ok{
+    background-color: red;
+    font-family: welcome;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-error{
+    color: rgb(255, 255, 255);
+
+    font-family: welcome;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.login-signup{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
